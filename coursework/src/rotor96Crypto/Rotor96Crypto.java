@@ -20,7 +20,7 @@ public class Rotor96Crypto {
 	public static String encdec(int mode, String key, String pt) {
 		set_key(key);
 		byte[] ctb = pt.getBytes();
-		
+		System.out.println();
 		// encrypt
 		for (int i = 0; i < pt.length(); i++) {
 			int	b = ctb[i];
